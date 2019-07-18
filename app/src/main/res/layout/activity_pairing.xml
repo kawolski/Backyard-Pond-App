@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loader"
+    android:backgroundTintMode="src_atop"
+    android:backgroundTint="@color/very_light_blue"
+    tools:context=".pairing">
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/pairedList"
+        android:text="DEVICE LIST"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="CHOOSE YOUR DEVICE"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:fontFamily="cursive"
+
+        />
+
+
+    <ListView
+        android:id="@+id/pairedList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/pairedBtn"
+        android:layout_margin="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/pairedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/my_shape_button"
+        android:text="GET PAIRED DEVICES"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:onClick="getPairedDevices"
+        />
+
+</RelativeLayout>

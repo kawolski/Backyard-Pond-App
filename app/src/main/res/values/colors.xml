@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#AC8203</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="temp_back">#BAFA6881</color>
+    <color name="text_color_grey_ish">#7A7979</color>
+    <color name="light_blue_ish">#890B67A8</color>
+    <color name="blue_light_trans">#AE027899</color>
+    <color name="yellow_light_trans">#AEBEB803</color>
+    <color name="led_back">#7EAA4872</color>
+    <color name="very_light_blue">#5200BCD4</color>
+    <color name="dark_blue">#5200BCD4</color>
+    <color name="blue_background">#1CB1FE</color>
+    <color name="full_trans">#001CB1FE</color>
+</resources>

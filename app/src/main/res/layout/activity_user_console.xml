@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backuc"
+    tools:context=".userConsole">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/ledSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+
+            app:button_background="@drawable/my_shape_button"
+            app:button_bottom_padding="13dp"
+
+            app:button_image_disabled="@drawable/ic_off_led"
+            app:button_image_enabled="@drawable/ic_on_led"
+            app:button_left_padding="13dp"
+            app:button_right_padding="13dp"
+
+            app:button_top_padding="13dp"
+            app:inner_text="LED"
+
+            app:inner_text_background="@drawable/my_shape_led"
+            app:inner_text_bottom_padding="12dp"
+            app:inner_text_color="#ffffff"
+
+            app:inner_text_size="20sp"
+            app:inner_text_top_padding="12dp" />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/flowSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+
+            app:button_background="@drawable/my_shape_button"
+            app:button_bottom_padding="13dp"
+
+            app:button_image_disabled="@drawable/ic_off_flow"
+            app:button_image_enabled="@drawable/ic_on_flow"
+            app:button_left_padding="13dp"
+            app:button_right_padding="13dp"
+
+            app:button_top_padding="13dp"
+            app:inner_text="FLOW"
+
+            app:inner_text_background="@drawable/my_shape_flow"
+            app:inner_text_bottom_padding="12dp"
+            app:inner_text_color="#ffffff"
+
+            app:inner_text_size="20sp"
+
+            app:inner_text_top_padding="12dp" />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/redSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/greenSeek"
+        android:layout_marginVertical="20dp"
+        android:max="100"
+        android:min="0"
+        android:thumb="@drawable/ic_black_seek"
+        android:thumbTint="#FFFF0000"
+        />
+    <SeekBar
+        android:id="@+id/greenSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueSeek"
+        android:layout_marginVertical="20dp"
+        android:max="100"
+        android:min="0"
+        android:thumb="@drawable/ic_black_seek"
+        android:thumbTint="#FF00FF00"
+        />
+    <SeekBar
+        android:id="@+id/blueSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temp_view"
+        android:layout_marginVertical="20dp"
+        android:max="100"
+        android:min="0"
+        android:thumb="@drawable/ic_black_seek"
+        android:thumbTint="#FF0000FF"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/disBtn"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/ic_about"
+        android:clickable="true"
+        app:fabCustomSize="57dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/disBtn"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF000000"
+        app:srcCompat="@drawable/ic_toys_yellow"
+        android:clickable="true"
+        app:maxImageSize="45dp"
+        app:fabCustomSize="57dp"
+        />
+
+    <TextView
+        android:id="@+id/temp_view"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/disBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/linear_shape_layout"
+        android:backgroundTintMode="src_atop"
+        android:gravity="center"
+
+        android:textColor="#505050"
+        android:textSize="50sp" />
+
+
+    <Button
+        android:id="@+id/disBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/my_shape_button"
+        android:onClick="dissconnectDevice"
+        android:text="DISSCONNECT"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
